@@ -151,7 +151,8 @@ GameObject:
   - component: {fileID: 7439173269075191317}
   - component: {fileID: 7935040233998859069}
   - component: {fileID: 6459359109953638312}
-  - component: {fileID: -1417872840013017215}
+  - component: {fileID: -24839789196978029}
+  - component: {fileID: -1209434364653121574}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -307,7 +308,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -1417872840013017215}
+      - m_Target: {fileID: -24839789196978029}
         m_TargetAssemblyTypeName: MovementController, Assembly-CSharp
         m_MethodName: OnWalk
         m_Mode: 0
@@ -363,7 +364,7 @@ MonoBehaviour:
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -1417872840013017215}
+      - m_Target: {fileID: -24839789196978029}
         m_TargetAssemblyTypeName: MovementController, Assembly-CSharp
         m_MethodName: OnJump
         m_Mode: 0
@@ -377,12 +378,28 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 407abe1d-6426-4f0e-9994-9ba3c76a665f
     m_ActionName: Player/Jump
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -1209434364653121574}
+        m_TargetAssemblyTypeName: CameraController, Assembly-CSharp
+        m_MethodName: OnCameraLook
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 99f05318-7598-44cb-bb3b-fe385b824a0a
+    m_ActionName: 'Player/CameraLook[/Mouse/delta]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &-1417872840013017215
+--- !u!114 &-24839789196978029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -393,7 +410,20 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c5c764656670e409224211a04d1b04, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  m_EditorClassIdentifier: Assembly-CSharp::MovementController
   JumpHeight: 5
   WalkSpeed: 5
-  Gravity: 9.81
+  Gravity: 5
+--- !u!114 &-1209434364653121574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487638945960708807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c391ec6b7469994a8d690440c62ef85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  Camera: {fileID: 2489528698577510214}

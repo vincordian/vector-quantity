@@ -127,14 +127,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1417872840013017215, guid: 707534fa9ff947545b5be5aaf59a15b3, type: 3}
-      propertyPath: JumpSpeed
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: -1417872840013017215, guid: 707534fa9ff947545b5be5aaf59a15b3, type: 3}
-      propertyPath: JumpHeight
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 1487638945960708807, guid: 707534fa9ff947545b5be5aaf59a15b3, type: 3}
       propertyPath: m_Name
       value: Player
